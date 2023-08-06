@@ -1,0 +1,239 @@
+*{
+    margin:0px ;
+    padding: 0px;
+}
+body{
+    background-color: #fbeef3;
+}
+html{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    letter-spacing:0.8px;
+    scroll-behavior: smooth;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 280px;
+}
+nav ul{
+    margin-top: 4.5%;
+}
+nav ul li,.social li,.aboutus li{
+    display: inline-block;
+    list-style: none;
+    font-size: 24px;
+}
+nav ul li a,.social li a,.aboutus li a{
+    text-decoration: none;
+    color:pink;
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: color 1s, background-color 1s,font-size 1s;
+}
+nav ul li a:hover{
+    background-color: #279c94;
+    color: black;
+    font-size: 26px;
+    transition:color 1s, background-color 1s,font-size 1s;
+}
+.pet-care{
+    margin: 10% 8%;
+    color: pink;
+}
+.pet-care a{
+    text-decoration: none;
+    color:pink;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 15px;
+    border: solid 1px #279c94;
+    transition:color 1s, background-color 1s,font-size 1s,padding-right 1s;
+}
+.pet-care a:hover{
+    background-color: #279c94;
+    padding-right: 110px;
+    color: black;
+    font-size: 26px;
+    transition:color 1s, background-color 1s,font-size 1s,padding-right 1s;
+}
+.pet-care h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+/* header///////////////////////////////////////////////////// */
+section{
+    margin: 70px auto;
+}
+.expalne{
+    width: 70%;
+    text-align: center;
+    margin: 70px auto;
+    color:#D41B5F;
+}
+
+.expalne hr{
+    width: 8%;
+    border: #279c94 solid 3px;
+    margin: 10px auto;
+}
+/* explain/////////////////////////////////////////////////// */
+.galary div img{
+    padding: 0px;
+    height: 270px;
+}
+
+/* galary////////////////////////////////////////////////////// */
+
+.services{
+    width: 90%;
+    margin: 70px auto;
+    text-align: center;
+}
+.services div i{
+    font-size:40px;
+    color: #D41B5F;
+}
+.services div h1{
+    margin:10px auto;
+    color:#D41B5F
+}
+.services div p{
+    line-height: 1.5;
+}
+.services div div{
+    transition: 1s;
+}
+.services div div:hover{
+    background-color: #279c94;
+    border-radius: 40%;
+    padding: 30px;
+    transition: 1s;
+}
+/* services/////////////////////////////////////////////////////////// */
+.locations{
+    width: 90%;
+    margin: 70px auto;
+}
+.locations div div div{
+    display: flex;
+}
+.center-div{
+    width: 50%;
+    margin: 20px auto;
+}
+.locations h1,.locations a{
+    color:#279c94;
+}
+.locations a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.locations div div i{
+    color: #D41B5F;
+    padding: 10px;
+    font-size: 30px;
+}
+.loc1,.loc3{
+    border-left: 3px solid #D41B5F;
+    border-bottom:3px solid #D41B5F ;
+    border-radius: 10%;
+    transition: .5s;
+}
+.loc2{
+    border-left: 3px solid #D41B5F;
+    border-top: 3px solid #D41B5F;
+    border-radius: 15%;
+    transition: .5s;
+}
+.loc1:hover,.loc3:hover{
+    border-top: 3px solid #279c94;
+    border-right:3px solid #279c94 ;
+    border-left: none;border-bottom: none;
+    transition: .5s;
+}
+.loc2:hover{
+    border-bottom: 3px solid #279c94;
+    border-right: 3px solid #279c94;
+    border-left: none;border-top: none;
+    transition: .5s;
+}
+/* branches ///////////////////////////////*/
+.login-form{
+    width:100%; height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),url(../images/twodogs\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px;
+    margin-bottom: 0px;
+}
+.login-form form{
+    width: 40%; height: 480px;
+    margin: 0px auto;
+    padding: 15px 50px;
+    border:3px solid #D41B5F;
+    border-radius: 5%;
+}
+input[type=text],select,textarea,input[type=email]{
+    width: 100%;
+    margin: 15px auto;
+    height: 30px;
+    background-color:#db306e4b;
+    outline: 0px;
+    border-color:transparent transparent #D41B5F ;
+    border-radius: 10px;
+}
+textarea{
+    height: 100px;
+}
+
+.login-form form input::placeholder{
+    padding-left: 5px;
+    color: white;
+}
+.login-form label{
+    font-size: 23px;
+    color:#fbeef3;
+    display: inline-block;
+    margin: 15px 50px;
+}
+label[for="opinion"]{
+    font-size: 20px;
+}
+.submit{
+    text-align: center;
+}
+input[type=submit]{
+    color: white;
+    width: 40%;
+    margin: 20px auto 0px;
+    height: 40px;
+    background-color:#db306e4b;
+    outline: 0px;
+    border-color:transparent transparent #D41B5F;
+    border-radius:10px ;
+}
+/*login form//////////////////////////////////////// */
+#about-us{
+    background-color: #279c94;
+    height: 150px;
+    margin: 0px;
+}
+.social,.aboutus{
+    display: flex;
+    padding: 50px;
+}
+.social li a:hover,.aboutus li a:hover{
+    color: black;
+    font-size: 22px;
+}
